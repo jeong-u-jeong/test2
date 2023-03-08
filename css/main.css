@@ -4,23 +4,18 @@ li {list-style: none;}
 img {display: block;}
 
 
-.wrap {
-    position: absolute;
-    top: 0;
-    left: -300px;
-    display: flex;
-    transition: all 0.5s;
-}
 
 /* ------------------menu_box------------------- */
 .wrap .menu_box {
-    width: 300px;
+    width: 250px;
     height: 100vh;
     background-color: #888;
-    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 .menu_box .logo {
-    width: 240px;
+    width: 190px;
     height: 150px;
     background-color: white;
     margin-top: 60px;
@@ -30,7 +25,7 @@ img {display: block;}
     line-height: 150px;
 }
 .menu_box .menu {
-    width: 240px;
+    width: 190px;
     margin-top: 60px;
     margin-left: 30px;
 }
@@ -42,32 +37,10 @@ img {display: block;}
 }
 .menu_box .menu .main_menu a {display: block;}
 
-/* ----------------btn_ham----------------- */
-.wrap .main .btn_menu {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-color: black;
-    position: fixed;
-    top: 30px;
-    left: 30px;
-    z-index: 50;
-    transition: all 0.5s;
-}
-.wrap .main .btn_menu .btn_icon {
-    display: block;
-    color: white;
-    font-size: 25px;
-    text-align: center;
-    line-height: 70px;
-}
-.wrap .main .btn_menu .icon_close {
-    display: none;
-}
-
 /* ----------------visual_swiper----------------- */
+.wrap .main {float: right;}
 .wrap .main .swiper {
-    width: 100vw;
+    width: calc(100vw - 250px);
     height: 100vh;
 }
 .swiper .swiper-slide {
