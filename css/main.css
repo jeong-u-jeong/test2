@@ -1,0 +1,148 @@
+* {margin: 0; padding: 0;}
+a {text-decoration: none; color: black;}
+li {list-style: none;}
+img {display: block;}
+
+
+.wrap {
+    position: absolute;
+    top: 0;
+    left: -300px;
+    display: flex;
+    transition: all 0.5s;
+}
+
+/* ------------------menu_box------------------- */
+.wrap .menu_box {
+    width: 300px;
+    height: 100vh;
+    background-color: #888;
+    overflow: hidden;
+}
+.menu_box .logo {
+    width: 240px;
+    height: 150px;
+    background-color: white;
+    margin-top: 60px;
+    margin-left: 30px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 150px;
+}
+.menu_box .menu {
+    width: 240px;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+.menu_box .menu .main_menu {
+    height: 40px;
+    font-size: 20PX;
+    line-height: 40px;
+    margin-top: 20px;
+}
+.menu_box .menu .main_menu a {display: block;}
+
+/* ----------------btn_ham----------------- */
+.wrap .main .btn_menu {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: black;
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    z-index: 50;
+    transition: all 0.5s;
+}
+.wrap .main .btn_menu .btn_icon {
+    display: block;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    line-height: 70px;
+}
+.wrap .main .btn_menu .icon_close {
+    display: none;
+}
+
+/* ----------------visual_swiper----------------- */
+.wrap .main .swiper {
+    width: 100vw;
+    height: 100vh;
+}
+.swiper .swiper-slide {
+    text-align: center;
+    line-height: 100vh;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper .slide1 {
+    background-color: pink;
+}
+.swiper .slide2 {
+    background-color: plum;
+}
+.swiper .slide3 {
+    background-color: beige;
+}
+.swiper .swiper-pagination {
+    position: absolute;
+    bottom: 40px !important;
+}
+.swiper .swiper-pagination-bullet { 
+    width: 80px;
+    height: 20px;
+    border-radius: 0;
+    background-color: #888;
+    margin: 8px;
+}
+
+/* ----------------contents_01----------------- */
+.wrap .main .contents {
+    font-size: 40px;
+    text-align: center;
+    line-height: 200px;
+}
+.wrap .main .contents_01 {
+    height: 1200px;
+    background-color: rgb(194, 234, 234);
+}
+
+/* ----------------contents_02----------------- */
+.wrap .main .contents_02 {
+    height: 800px;
+    background-color: rgb(221, 189, 178);
+}
+
+/* ----------------contents_03----------------- */
+.wrap .main .contents_03 {
+    height: 650px;
+    background-color: rgb(143, 182, 255);
+}
+/* ------------------footer------------------- */
+.wrap .main .footer {
+    height: 500px;
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    line-height: 500px;
+}
+
+/* ------------------btn_top------------------- */
+.btn_top {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+.btn_top .top {
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+}
