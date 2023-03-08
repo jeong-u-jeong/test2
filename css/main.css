@@ -38,7 +38,11 @@ img {display: block;}
 .menu_box .menu .main_menu a {display: block;}
 
 /* ----------------visual_swiper----------------- */
-.wrap .main {float: right;}
+.wrap .main {
+    position: absolute;
+    top: 0;
+    left: 250px;
+}
 .wrap .main .swiper {
     width: calc(100vw - 250px);
     height: 100vh;
