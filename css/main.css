@@ -9,20 +9,20 @@ img {display: block;}
 .wrap .menu_box {
     width: 250px;
     height: 100vh;
-    background-color: #888;
+    background-color: #d4ebff;
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 10;
 }
 .menu_box .logo {
     width: 190px;
     height: 150px;
-    background-color: white;
-    margin-top: 60px;
-    margin-left: 30px;
-    font-size: 30px;
+    font-size: 50px;
     text-align: center;
     line-height: 150px;
+    margin-top: 60px;
+    margin-left: 30px;
 }
 .menu_box .menu {
     width: 190px;
@@ -31,11 +31,38 @@ img {display: block;}
 }
 .menu_box .menu .main_menu {
     height: 40px;
-    font-size: 20PX;
+    font-size: 14PX;
     line-height: 40px;
-    margin-top: 20px;
+    margin-top: 12px;
 }
-.menu_box .menu .main_menu a {display: block;}
+.menu_box .menu .main_menu a {
+    display: block;
+    color: #0055a0;
+
+}
+.menu_box .tel {
+    width: 190px;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+.menu_box .tel .reservation {
+    font-size: 15px;
+}
+.menu_box .tel .number {
+    margin-top: 10px;
+}
+.menu_box .tel .number .icon_tel {
+    width: 50px;
+    height: 70px;
+    background-color: #4fabfc5a;
+    float: left;
+}
+.menu_box .tel .number .num {
+    width: 100px;
+    font-size: 25px;
+    float: left;
+    margin-left: 15px;
+}
 
 /* ----------------visual_swiper----------------- */
 .wrap .main {
@@ -54,71 +81,131 @@ img {display: block;}
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
 }
 .swiper .slide1 {
-    background-color: pink;
+    background-image: url(./images/main_consult_img.jpg);
 }
 .swiper .slide2 {
-    background-color: plum;
+    background-image: url(./images/lv-1-thumb.gif);
 }
 .swiper .slide3 {
-    background-color: beige;
+    background-image: url(./images/sub-visual-pro-all.jpg);
+    background-position: 1250px;
 }
 .swiper .swiper-pagination {
     position: absolute;
     bottom: 40px !important;
 }
 .swiper .swiper-pagination-bullet { 
-    width: 80px;
-    height: 20px;
-    border-radius: 0;
-    background-color: #888;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #0055a0;
     margin: 8px;
 }
 
 /* ----------------contents_01----------------- */
 .wrap .main .contents {
-    font-size: 40px;
-    text-align: center;
-    line-height: 200px;
+    padding: 0 50px;
+    overflow: hidden;
 }
-.wrap .main .contents_01 {
-    height: 1200px;
-    background-color: rgb(194, 234, 234);
+.contents .contents_title {
+    font-size: 30px;
+    margin: 150px 0px 50px 0px;
+}
+.contents_01 .container {
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+.contents_01 .container .item {   
+    display: flex;
+}
+.contents_01 .container .item .item_img {
+    width: 50%;
+}
+.contents_01 .container .item .item_img img {width: 100%;}
+.contents_01 .container .item .item_text_box {
+    width: 50%;
+    background-color: #f0f8ff;
+}
+.contents_01 .container .item .item_text_box .item_text {
+    padding: 30px;
 }
 
 /* ----------------contents_02----------------- */
-.wrap .main .contents_02 {
-    height: 800px;
-    background-color: rgb(221, 189, 178);
+.contents_02 {background-color: #f0f8ff;}
+.contents_02 .tab_box {margin-bottom: 150px;}
+.contents_02 .tab_box .tab {
+    height: 70px;
+    background-color: white;
+    margin-bottom: 30px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.tab .tab_top {
+    height: 70px;
+    position: relative;
+}
+.tab .tab_top .tab_title {
+    height: 70px;
+    font-size: 18px;
+    line-height: 70px;
+    padding-left: 30px;
+}
+.tab .tab_top .btn_more {
+    width: 70px;
+    height: 70px;
+    color: #0055a0;
+    text-align: center;
+    line-height: 70px;
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.tab .tab_text {
+    padding: 30px;
+    padding-top: 0;
 }
 
 /* ----------------contents_03----------------- */
 .wrap .main .contents_03 {
     height: 650px;
-    background-color: rgb(143, 182, 255);
+    background-color: rgb(182, 182, 182);
 }
 /* ------------------footer------------------- */
-.wrap .main .footer {
+.wrap .main .footer_top {
     height: 500px;
-    background-color: black;
     color: white;
     font-size: 40px;
     text-align: center;
     line-height: 500px;
+    border-top: 1px solid #ccc;
+    background-color: black;
+    overflow: hidden;
+}
+.wrap .main .footer .footer_bottom {
+    height: 80px;
+    border-top: 1px solid #ccc;
+    background-color: black;
 }
 
 /* ------------------btn_top------------------- */
 .btn_top {
     width: 50px;
     height: 50px;
-    background-color: red;
     border-radius: 50%;
+    border: 1px solid #0055a0;
     position: fixed;
     bottom: 30px;
     right: 30px;
 }
 .btn_top .top {
+    color: #0055a0;
+    font-weight: bold;
     font-size: 20px;
     text-align: center;
     line-height: 50px;

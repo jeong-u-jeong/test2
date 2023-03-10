@@ -12,3 +12,8 @@ var swiper = new Swiper(".visual", {
       prevEl: ".swiper-button-prev",
     },
 });
+
+//탭
+function open_tab(tab){
+  tab.parentElement.style.height="240px";
+};
